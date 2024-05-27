@@ -1,0 +1,2506 @@
+''' print("hello world")
+num=int(input("Enter your number :- "))
+
+if num % 2==0:
+  print("even number ")
+else:
+  print("Odd number")
+
+
+num=123
+print(type(num))
+num=1234.5
+print(type(num))
+num ="hello shashi "
+print(type(num))
+num=num.count('shashi,shashi')
+print((num))
+print("these are the data types available in python programming") 
+
+
+write code to read 3 float values from keyboard with , seperator and print the sum of the values.
+
+
+a,b,c=[float(x) for x in input("Enter three values separated by comma: ").split(',')]
+print(a+b+c)
+
+
+
+# write code for find the memory refrence id of the list.
+lis=[1,2,3,4,5,6,7,8,9]
+for i in range(10):
+  print(id(lis[i]))
+
+
+# write code for python conditional statements 
+
+# code to convert tamrature from clacious to farenhite
+c=int(input("Enter the temprature in celcious :- "))
+fa=(c*9/5)+32
+print("the tamprature in farenhite is :- ", fa)
+
+# code for guess a number between 1 to 9.
+num=int(input("Enter the number between 1 to 9 :- "))
+if num==9:
+  print("Well Guess the number ")
+else:
+  print("Try again")
+
+
+# write code for accept the word and reverse it.
+
+string=input("Enter the word :- ")
+print(string[-1 ::-1])
+
+
+# write code for print pattern 
+
+# *
+# * *
+# * * *
+# * * * *
+# * * *
+# * *
+# *
+
+# Construct a star pattern using a nested for loop
+
+# Number of rows
+n = 5
+
+# Outer for loop iterates over the rows
+for i in range(n):
+
+    # Inner for loop iterates over the columns
+    for j in range(i + 1):
+        print('*', end=' ')
+
+    # Print a newline after each row
+    print()
+    
+'''
+
+# code for making list.
+# write code printing list element.
+'''
+num=int(input("Enter the number of elements :- "))
+ l=[]
+for i in range(num):
+  l.append(int(input("Enter the number :- ")))
+  print(l)
+  print(l[i])
+
+# write code for print reverse order of a list
+
+pr=[1,2,3,4,5,6,7,8,9,10,"shashi ranjan"]
+
+print(pr[-1::-1])
+print(type(pr))
+  
+
+# write code for print the class of each element in a list.
+
+num=int(input("Enter the number :- "))
+l=[]
+for i in range(num):
+  l.append(int(input("enter list element :- ")))
+  print(type(l[i]))
+  
+
+
+# write code for print the multiplication of two lists.
+num=int(input("Enter the number of eleement  :- "))
+l=[]
+l1=[]
+
+for i in range(num+1):
+  l.append(int(input("Enter the number  for list 1: -")))
+  l1.append(int(input("Enter the number  for list 2: -")))
+  print(l)
+  print(l1)
+  
+print(l[i]*l1[i])
+
+# write code for check whether complex number is available in a list or not.
+
+num=int(input("Enter the number of elements :- "))
+li=[]
+for i in range(num):
+  li.append(int(input("Enter the nmuber :- ")))
+  print(type(li[i]))
+count=count+1
+if count==1:
+  print("complex number is available in the list")
+else:
+  print("complex number is not available in the list")
+  
+
+# wwrite code for making 2D list.
+
+num = int(input("Enter the number of rows :- "))
+
+li = []
+for i in range(num):
+  li.append([])
+  for j in range(num):
+    li[i].append(int(input("Enter the number :- ")))
+
+# Print the matrix.
+for row in li:
+  print(" \n\n", row)
+
+
+# write code for print the conditional statement.
+
+num=int(input("Enter the number :- "))
+
+if num>=65 and num<=90:
+  print(" The string in upper case ")
+elif num>=97 and num<=122:
+  print("The string in lower case ")
+elif num>=48 and num<=57:
+  print(" the string is a number ")
+else:
+  print("Invaild input")
+
+
+# write code for print the  simple Interest in a given period in conditional statement.
+
+p=float(input("Enter the principal amount :- "))
+t=float(input("Enter the time period :- "))
+r=float(input("Enter the rate of interst :- "))
+si=p*t*r/100
+if si>=1000:
+  print("The simple interest is ",si)
+else:
+  print("The simple interest is less then 1000")
+
+
+# write code for print the conditional statement .
+
+# Press 1 for insert element in the list.
+# press 2 for fatch simple interest.
+
+
+
+option=int(input("Enter the option :- "))
+if option==1:
+  print("Welcome \n")
+  num=int(input("Enter  number  for insert element in list  :- "))
+  li=[]
+  for i in range(num):
+    
+    li.append(int(input("Enter the element :- ")))
+    print(li)
+    
+elif option==2:
+  print("welcome option 2 simple interest :-  \n ")
+  p=float(input("Enter the principal amount :- "))
+  t=float(input("Enter the time peroid :- "))
+  r=float(input("Enter the rate of interest :- "))
+  si=p*t*r/100
+else:
+  print("Press only 1 or 2")
+  
+
+
+# write code for reverse of string given by user.
+
+str=input("Enter the string :- ")
+print("the reverse of the string is :- ",str[::-1])
+
+# write code for printing square of each element of list .
+num = int(input("Enter the number of elements :- "))
+li = []
+for i in range(num):
+  li.append(int(input()))
+  print(li[i] * li[i])
+
+
+# write code for impliment dictonary data structure.
+
+dict = {}
+dict["company name"] = {"IBM"}
+dict["Role"] = input("Enter the role :- ")
+dict["Experince"] = int(input("Enter the experince :- "))
+dict["salary"] = float(input("Enter the salary :- "))
+dict["location"] = input("Enter the location :- ")
+print(type(dict), " \n ", dict)
+
+
+# write code for printing 1 to 10 number using for loop.
+
+for i in range(1,11):
+  print(i)
+
+
+# write code for print table of 2 using for loop.
+
+for i in range(1,11):
+  print(2*i)
+  print("\n")
+
+
+# Write code to generate febonacii triangle.
+a=0
+b=1
+print(a)
+print(b)
+for i in range(9):
+  c=a+b
+  print(c)
+  a=b
+  b=c
+
+def generate_fibonacci_triangle(n):
+  a, b = 0, 1
+
+  for i in range(n):
+      for j in range(i + 1):
+          print(a, end=" ")
+          a, b = b, a + b
+      print()
+
+if __name__ == "__main__":
+  n = int(input("Enter the number of rows for the Fibonacci triangle: "))
+  generate_fibonacci_triangle(n)
+
+
+# write a code for check whether a give numer is armstrong number or not.
+num=int(input("Enter the number :- "))
+sum=0
+temp=num
+while temp>0:
+  digit=temp%10
+  sum=sum+digit**3
+  temp//=10
+
+  if sum==num:
+    print("this is armstrong number")
+  else:
+    print("this is not armstrong number")
+    
+ 
+# write code for find given year is leap year or not.
+
+def is_leap_year(year):
+  if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+      return True
+  else:
+      return False
+
+year = int(input("Enter a year: "))
+
+if is_leap_year(year):
+  print(year, "is a leap year.")
+else:
+  print(year, "is not a leap year.")
+
+
+# write code for reverse of a number.
+number=int(input("Enter your number :- "))
+
+reverse=0
+while number>0:
+  digit=number%10
+  reverse=reverse*10+digit
+  number//=10
+print(reverse)
+
+
+
+# write code for print fibonacci series.
+
+a=0
+b=1
+print(a)
+print(b)
+for i in range(9):
+  c=a+b
+  print(c)
+  a=b
+  b=c
+
+
+
+# write a code decoad for given input text.
+def properCompression(s):
+  compressedStr = ""
+
+  for i in range(0, len(s), 2):
+      c = s[i]
+      count = int(s[i + 1])
+      while count > 0:
+          compressedStr += c
+          count -= 1
+
+  return compressedStr
+
+
+inputStr = "a3b5c2"
+compressedResult = properCompression(inputStr)
+print(compressedResult)  # Output: "aaabbbbbcc"
+
+
+# write code for A program takes a random integer between 1 to 100, the user is then prompted to input a guess number. If the user input matches with guess number, the program will
+#display a message "Right On!" otherwise display a message "Unlucky :(".
+
+import random
+
+num = random.randint(1, 100)
+
+guess = int(input("Enter your input :- "))
+
+if num == guess:
+  print("Right On!")
+else:
+  print("Unlucky :( ")
+
+print(" the random number is ", num)
+
+
+# write code for making  triangle through astriks.
+
+for i in range(7):
+
+
+# write code for remove the  vowels from input string.
+
+string_name = input("Enter your string :- ")
+
+arr = []
+
+for i in string_name:
+  if i not in "AEIOUaeiou":
+    arr.append(i)
+
+print("".join(arr))
+
+# write code for 
+
+
+# write code for check the string contains any vowels or not.
+
+string_name=input("Enter your string :- ")
+
+vowels=["a","e ","i","o","u","A","E","I","O","U"]
+
+for i in string_name:
+  if i in vowels:
+    print("Yes")
+    break
+  else:
+    print("No")
+
+
+
+# write code for making ATM application system 
+
+import random
+import time 
+
+balance=200
+
+print("Welcome back to Bank of Coder")
+
+print("Press 1 for Balence Enquiry")
+print("Press 2 for Withdraw")
+print("press 3 for Deposite ")
+print("Press 4 for Check Debit Card")
+choice_item=int(input("\n Press your choice :- "))
+
+if choice_item==1:
+  print("your current balance is :- ",balance)
+  time.sleep(2)
+  print("Thank you for using our ATM")
+
+elif choice_item==2:
+  withdraw_amount=int(input("Enter amount to withdraw :- "))
+  if withdraw_amount>balance:
+    print("Sorry, you have insufficent balance ! ")
+    time.sleep(2)
+    print("Thank you for using my ATM")
+
+elif choice_item==3:
+  deposite_amount=int(input("Enter amount to deposite :- "))
+  new_balance=balance+deposite_amount
+  print("Your Update balance is :- ",new_balance)
+  time.sleep(2)
+  print("Thank you for using my ATM")
+
+elif choice_item==4:
+  print("your debit card is activated ")
+  time.sleep(2)
+  print("Thank for using ATM")
+else:
+  print("Invalid choice Try again ! ")
+  
+
+
+
+# write code for check is it valid Debit card or not.
+
+card_number=int(input("Enter your card number :- "))
+
+
+
+# write Code for make array as user input
+
+num=int(input("Enter th array size :- "))
+a=[]
+for i in range(0,num):
+  a.append(int(input()))
+  
+  print(a[i])
+
+          
+# write code for fing the max and min number in list .
+
+number=int(input("Enter the value for size of the list :- "))
+
+
+
+# write code for adding two gratest number from list .
+
+# cook your dish here
+
+array_size = int(input("Enter list size: "))
+a = []
+
+input_numbers = input("Enter the numbers separated by a space: ")
+numbers_list = input_numbers.split()
+for num in numbers_list:
+    a.append(int(num))
+num=sorted(a)
+print(num)
+
+
+# write code for finding largest and second largest number from list.
+
+num=int(input("Enter size of list :- "))
+
+a=[]
+i=0
+for _i in range(num):
+  a.append(int(input()))
+  
+
+
+r=float(input("Enter radius :- "))
+pi=3.14
+print(pi*r*r)
+   
+# write code for printing square of .
+n = int(input())
+l=[]
+for i in range(n):
+    l.append(int(input()))
+    print(l[i]*l[i])
+  
+
+ 
+
+# Write a Python program to print the following string in a specific format (see the output).
+
+#Sample String : "Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are".
+
+print(" Twinkle, Twinkle, little star,\n\t How I wonder what you are ! \n\t\t Up above the world so high,\n\t\t Like a diamond in the sky. \n Twinkle, twinkle, little star,\n\t How I wonder what you are")
+
+
+
+# write code to find out what version of python you are using. 
+import sys
+print(sys.version)
+
+ 
+# write code to print current date and time.
+
+import datetime
+print(datetime.datetime.now())
+
+
+# write code for an array with n element the task is to rotate the array to the left by k steps where k is non negative.
+
+lis=[1,2,3,4,5]
+
+k=int(input("Enter the value of k :- "))
+
+for i in range(k):
+  lis.append(lis.pop(0))
+  print(lis)
+
+
+# write code for print sequence of number starting with N using loop where replace N with N -5 untill >0 after that replace N with N+5 regains its initial value.
+
+N=16
+while N>0:
+  N=N-5
+  print(N)
+
+N=16
+while N<16:
+  N=N+5
+  print(N)
+
+ 
+
+# write code that you are given string of length N task is to reverse the original string word by word.
+
+str=input("Enter your string :- ")
+
+str=str.split()
+print(str[::-1])
+
+
+
+
+
+# write code for fatch unique number from list.
+
+list_my=[1,4,4,3,2,3,2,1,5]
+
+for i in list_my:
+  if list_my.count(i)==1:
+    print(i)
+
+
+# write code for valid pair for a given number from list.
+
+lis=[1,2,3,4,5,6,7,11,13]
+i=0
+
+num=int(input("Enter the given number from list :- "))
+for i in range(len(lis)):
+  for j in range(i+1,len(lis)):
+    if lis[i] + lis[j]==num:
+      print(lis[i],lis[j])
+      break
+
+
+# write code for print to sort the list in assending order.
+
+test_case=int(input("Enter the number of test cases :- "))
+
+for i in range(test_case):
+  n=int(input("Enter the size of list :- "))
+  lis=[]
+  lis.append(int(input("Enter the element :- ")))
+  lis.sort()
+  print(lis)
+  
+
+
+
+
+# write code for a given list of size N contains 0,1,2.write solution to sort list.
+
+test_case=int(input("Enter test case"))
+
+
+
+# write code for chef defin a pair of positive integer (a,b) to be a Oneful Pair if a+b+(a.b) = 111.
+
+a, b = map(int, input("Enter two numbers :-  ").split())
+if a + b + (a * b) == 111:
+  print("Yes")
+else:
+  print("No")
+
+
+
+# write code for give two integer A and B add these two numbers and output the sum.
+
+test_case=int(input("Enter test case :- "))
+i=0
+for i in range(test_case):
+  a,b=map(int, input("Enter two numbers :- ").split())
+  print(a+b)
+
+
+# write code for offers a called streak count. A streak is maintianed if you solve at least one problem daily.
+
+test_case=int(input("Enter test case :- "))
+lis=[]
+for i in range(test_case):
+  n_days=int(input("Number of days "))
+  for j in range(n_days):
+    lis.append(int(input("Enter the number :- ")))
+    
+
+# write  code for add number as user want in the given list.
+
+num = int(input("Enter the size of the list: "))
+lis = []
+
+user_input = int(input("Enter the number you want to add to each element: "))
+
+for i in range(num):
+    element = int(input("Enter the list element: "))
+    lis.append(element + user_input)
+
+print("Updated list:", lis)
+
+
+# write code that removes and prints every third number from a list of number untill the list is empty.
+
+my_list=[1,2,3,4,5,6,7,8,9,10]
+
+for i in my_list:
+  if i%3==0:
+    my_list.remove(i)
+    print(my_list)
+  
+
+
+# write code for decode a given string
+
+def decode_string(encoded_string):
+  decoded_string = ""
+  i = 0
+
+  while i < len(encoded_string):
+      count = 0
+      while i < len(encoded_string) and encoded_string[i].isdigit():
+          count = count * 10 + int(encoded_string[i])
+          i += 1
+
+      char = encoded_string[i]
+      decoded_string += char * count
+      i += 1
+
+  return decoded_string
+
+# Example usage:
+encoded_str = "2a3b"
+decoded_str = decode_string(encoded_str)
+print(decoded_str)
+
+
+
+# write code for check string is palandrome or not.
+
+my_string = input("Enter your string :- ")
+
+if my_string == my_string[::-1]:
+  print("String is palandrome ")
+else:
+  print("string is not palandrome ")
+
+
+# write code for check how many character present in the string.
+
+string=input("Enter your string :- ")
+print(len(string))
+
+
+# write code for check how many consonent present in the string.
+
+string="shashi"
+c=0
+for i in string:
+  if i  not in "aeiou":
+    c=c+1
+print("\n Total number of consonent charater is ",c)
+    
+    
+
+# write code for finding square root of number from 1 to n.
+
+import math as m
+
+
+n=int(input("Enter the number :- "))
+
+for i in range(1,n+1):
+  print(i,"",m.sqrt(i))
+
+
+
+# write code for check whether the string contains only  digits or only alphabets or only special character. 
+
+string = input("Enter string: ")
+
+if any(char.isalpha() for char in string) and not any(char.isdigit() for char in string) and not any(char.isalnum() for char in string):
+    print("String contains only alphabets")
+
+elif any(char.isdigit() for char in string) and not any(char.isalpha() for char in string) and not any(char.isalnum() for char in string):
+    print("String contains only digits")
+
+elif not any(char.isalnum() or char.isspace() for char in string):
+    print("String contains only special characters")
+
+elif any(char.isalpha() for char in string) and any(char.isdigit() for char in string) and any(char.isalnum() or char.isspace() for char in string):
+    print("String contains all types of characters")
+
+else:
+    print("String contains a combination of characters")
+
+  
+
+
+# write code for finding absolute mean of the list.
+
+
+import math
+
+my_list = [12, 13, 14, 15]
+
+absolute_values = [abs(num) for num in my_list]
+mean = sum(absolute_values) / len(absolute_values)
+
+print(mean)
+
+
+
+
+# write code for finding whether string contrains all vowels or not.
+
+string=input("Enter your string :- ")
+
+if all(x in string for x in ['a', 'e', 'i', 'o', 'u']):
+  print("String contains all vowels in string ")
+
+
+# write code for pair sum problems.
+
+num=int(input("Enter the number for list size :- "))
+
+lis=[]
+i=0
+for i in range(num):
+  lis.append(int(input("Enter the element :- ")))
+  lis.sort()
+sum=int(input("Enter the number for sum :- "))
+for i in range(len(lis)):
+  for j in range(i+1,len(lis)):
+    if lis[i]+lis[j]==sum:
+      print(lis[i],lis[j])
+      break
+
+
+# write code for find dubliacte number in the list.
+
+
+print("Here we go ")
+lis=[1,2,1,3,4,3]
+
+for i in range(len(lis)):
+  for j in range(i+1,len(lis)):
+    if lis[i]==lis[j]:
+      print(lis[i])
+      break
+
+
+# write code for find the number which is not repeated in the list.
+
+num=int(input("Enter the number for list size :- "))
+
+lis=[]
+for i in range(num):
+  lis.append(int(input("Enter the element :- ")))
+for i in range(len(lis)):
+  for j in range(i+1,len(lis)):
+    if lis[i]!=lis[j]:
+      print(lis[i])
+
+# write code for first and last element of the list decrease by 5.
+
+num=int(input("Enter size of the list :- "))
+
+lis=[]
+
+for i in range(num):
+  lis.append(int(input("Enter the element :- ")))
+  if lis[i]==lis[0]:
+    lis[i]=lis[i]-5
+  elif lis[i]==lis[-1]:
+    lis[i]=lis[i]-5
+print(lis)
+
+
+
+
+# write code for find the number occurence in the list.
+
+list1=[1,2,3,4,5,6,7,8]
+
+num=int(input("Enter the number :- "))
+for i in range(num):
+  list1.append(int(input("Enter the element :- ")))
+print(" Updated list is ",list1)
+
+
+
+# write code for the given list is ordered or not .
+num = int(input("Enter the number for list size :- "))
+
+lis = []
+i = 0
+for i in range(num):
+  lis.append(int(input("Enter the element :- ")))
+  lis.sort()
+print(lis)
+
+# write code for the given problems.
+
+def main():
+  N = int(input())
+  w = [int(input()) for _ in range(N)]
+
+  w.sort()
+
+  cost = 1
+  last = w[0]
+
+  for i in range(1, N):
+      if w[i] > last + 4:
+          cost += 1
+          last = w[i]
+
+  print(cost)
+
+if __name__ == "__main__":
+  main()
+
+
+
+
+# write code for finding the distance between two cities.
+
+from math import radians, sin, cos, sqrt, atan2
+
+def haversine(lat1, lon1, lat2, lon2):
+    # Radius of the Earth in kilometers
+    R = 6371.0
+
+    # Convert latitude and longitude from degrees to radians
+    lat1, lon1, lat2, lon2 = map(radians, [lat1, lon1, lat2, lon2])
+
+    # Calculate the differences in coordinates
+    dlat = lat2 - lat1
+    dlon = lon2 - lon1
+
+    # Haversine formula
+    a = sin(dlat / 2)**2 + cos(lat1) * cos(lat2) * sin(dlon / 2)**2
+    c = 2 * atan2(sqrt(a), sqrt(1 - a))
+
+    # Calculate the distance
+    distance = R * c
+
+    return distance
+
+def main():
+    # Example coordinates for two cities (replace with the actual coordinates)
+    city1 = {"name": "City1", "latitude": 40.7128, "longitude": -74.0060}
+    city2 = {"name": "City2", "latitude": 34.0522, "longitude": -118.2437}
+
+    # Calculate the distance between the two cities
+    distance = haversine(city1["latitude"], city1["longitude"], city2["latitude"], city2["longitude"])
+
+    print(f"The distance between {city1['name']} and {city2['name']} is approximately {distance:.2f} km.")
+
+if __name__ == "__main__":
+    main()
+
+  
+  
+
+
+
+# 
+number= int(input("Enter the size of array : - "))
+arr=[]
+arr1=[]
+arr2=[]
+for i in range(number):
+  arr.append(int(input("Enter the input :- ")))
+  if arr[i]>0:
+    arr1.append(arr[i])
+  else:
+    arr2.append(arr[i])
+
+print(arr1+arr2)
+  
+
+# write code A chocolate factory is packing chocolates into the packets. The chocolate packets here represent an array  of N number of integer values. The task is to find the empty packets(0) of chocolate and push it to the end of the conveyor belt(array).
+
+
+number = int(input("Enter the size of array: "))
+arr = []
+
+for i in range(number):
+    arr.append(int(input("Enter the input: ")))
+
+# Separate positive and non-positive elements in a single array
+result = [x for x in arr if x > 0] + [x for x in arr if x <= 0]
+
+print(result)
+
+
+#  write code to convert the given string into list.
+
+name=input("Enter your string :- ")
+print(list(name))
+
+
+# write code to finding power of power of a number.
+
+test_case=int(input("Enter for test case :- "))
+A=0
+B=0
+for i in range(test_case):
+  
+  a, b, c, m = map(int, input("Enter four values separated by space: " 
+  ).split())
+  A=a**b
+  B=a**A
+  print(B % m)
+
+  or 
+test_case = int(input("Enter the number of test cases: "))
+for _ in range(test_case):
+    a, b, c, m = map(int, input("Enter four values separated by space: ").split())
+
+    # Calculate A = (a^b) % m
+    A = pow(a, b, m)
+
+    # Calculate B = (A^a) % m
+    B = pow(A, a, m)
+
+    print(B)
+
+# write code for list modification .
+lis=[]
+num=int(input("Enter the size of the list :- "))
+for i in range(num):
+   lis.append(int(input("Enter the number :-  ")))
+   
+print(lis)
+
+
+# write code for list updation.
+
+
+num_of_emp = int(input("Enter the number of employees: "))
+
+# Create empty lists to store employee details
+names = []
+e_ids = []
+e_branches = []
+e_salaries = []
+
+# Input details for each employee
+for i in range(num_of_emp):
+    name = input("Enter the name: ")
+    e_id = int(input("Enter your ID: "))
+    e_branch = input("Enter your branch: ")
+    e_salary = float(input("Enter your salary: "))
+
+    # Append details to lists
+    names.append(name)
+    e_ids.append(e_id)
+    e_branches.append(e_branch)
+    e_salaries.append(e_salary)
+
+# Print details for each employee
+for j in range(num_of_emp):
+    print("Name:", names[j])
+    print("ID:", e_ids[j])
+    print("Branch:", e_branches[j])
+    print("Salary:", e_salaries[j])
+    print()
+
+
+# write code for the given problem that priotize the task by its imortance.
+
+inpu=int(input("Enter the test  :- "))
+lis=[]
+for i in range(inpu):
+  lis.append(int(input("Enter the element for list :- ")))
+print(sorted(lis))
+  
+
+
+# write code for pair sum.
+
+test_case = int(input("Enter the number of test cases: "))
+arr = []
+ans = int(input("Enter the sum: "))
+
+for i in range(ans):
+    element = int(input("Enter your element: "))
+    arr.append(element)
+
+for i in range(test_case):
+    for j in range(i):
+        if arr[i] + arr[j] == ans:
+            print(arr[i], arr[j])
+
+
+num=int(input("Enter your number :- "))
+lis=[]
+for i in range(num):
+  lis.append(input("Enter the string :- "))
+  if lis[i].palindrome():
+    print(lis[i])
+  else:
+    print("Not a palindrome")
+
+
+# write code for implmenting the for loop .
+
+cart=[130,345,2324,456,232,123]
+
+for i in cart:
+  if i > 1000:
+    print("You have to pay  extra ",i*(30/100),"for this item .")
+  else:
+    print("You have to pay ",i)
+print("\nThank you for shopping with us .")
+
+
+# write code for implimenting the loop concept. 
+
+ins=int(input("Enter the number of items :- "))
+
+lis=[]
+for i in range(ins):
+  lis.append(int(input("Enter the item :- ")))
+print(lis)
+print("\n\ntotal purchase item :- ",sum(lis))
+
+ # write code for implementing the concept of the tuple.
+
+tup=(12,13,14,5,13,43,13,12,332,332)
+print(sorted(set(tup)))
+
+   
+# write code in python for implimenting the concept of the dictionary.
+
+dic={1:"A",2:"B",3:"C",4:"D",5:"E"}
+print(sorted(dic))
+print(type(dic))
+print(dic.keys)
+print(dic.values)
+
+
+# write code in python for implimenting the concept of the list complition .
+lis=[12,13,14,56,23]
+lis1=[45,78,45,80,453]
+print(" sorted list is :- ",sorted(lis+lis1))
+
+
+# write code in string manupulation.
+
+name=input("Enter your name :- ")
+
+i=0
+for i in name:
+  print(i,"    ",i[::-1])
+
+stre='abcdefghij'
+print(stre[1:6:2])
+print(stre[::1])
+print(stre[::-1])
+print(stre[3:7:-1])
+print(stre[7:4:-1])
+#print(0:1000:1)
+print(stre[4:1:-1])
+print(stre[-4:1:-2])
+#print(stre[9:0:0])
+print(stre[0:-10:-1])
+print(stre[0:-9:-2])
+
+
+
+# write code to find occurances of a character in a given string .
+
+st=input("Enter the string :- ")
+ch=input("Enter the character :- ")
+print(st.count(ch))
+
+
+
+# write code in python for the string operation for non duplicating characters.
+
+string=input("Enter the string :- ")
+for x in string:
+  if string.count(x)==1:
+    print(x)
+
+  else:
+    print("Not a unique character")
+
+
+
+# write code in python for the string operation for check whether dublicate character exist or not.
+
+string=input("Enter the string :- ")
+for x in string :
+  if string.count(x)>1:
+    print("Dublicate character exist")
+    break
+
+
+
+
+
+# write code in python for join operation.
+
+s=[12,13,14,154,545,34]
+
+h = " ".join(str(x) for x in s)
+print(h)
+
+
+
+# write code in python for the list operation.
+
+lis=['s','a','f','f','v','k','g']
+for i in range(len(lis) - 1):
+  if lis[i] == lis[i+1]:
+    print("Duplicate character exists")
+  else:
+    print("No duplicate character")
+
+
+
+# write code in python for the string manupulation.
+
+s=input("Enter any character :- ")
+if s.isalnum:
+  print("It is alphanumeric")
+
+  if s.isalpha:
+    print("It is alphabet character")
+    if s.islower:
+      print(" it is lower case alpha character")
+    else:
+      print(" it is upper case alpha character ")
+  else:
+    print(" it is numeric character")
+elif s.isspace:
+  print(" it is space character")
+else:
+  print(" it is  non special character")
+    
+
+
+# write code in python for the string operation.
+
+srt=input("Enter the string :-")
+
+print(srt.startswith("Shashi"))
+print(srt.istitle())
+print(srt.endswith("Hyderabad"))
+
+
+# write code in python for the string operation.
+
+sdf=input("Enter the string :-  ")
+
+if sdf.islower:
+  print("It is lower case")
+elif sdf.isupper:
+  print("It is upper case")
+elif sdf.startswith("shashi")
+  
+    
+string=input("Enter string :- ")
+# print(string[::-1])
+  #print(''.join(reversed(string)))
+
+for i in range(len(string)-1,-1,-1):
+  print(string[i],end="")
+
+
+# write code in python for the string operation.
+string = " Learning python is very easy"
+li=string.split()
+print(li[::-1])
+
+
+
+# write ocde in python for the string menupulation.
+
+   s   = 'A3B6C5'
+output = '356ABC'
+
+al = []
+d = []
+for i in range(len(s)):
+  if s[i].isalpha():
+    al.append(s[i])
+  else:
+    d.append(s[i])
+print(''.join((sorted((al + d)))))
+
+# write code for string manupulation.
+
+stre=input("Enter the string :- ")
+al=[]
+di=[]
+
+for i in range(len(stre)):
+  if stre[i].isalpha():
+    al.append(stre[i])
+  else:
+    di.append(stre[i])
+print(al)
+print(di)
+    
+
+# write code in python for the string manupulation.
+#lazy=zaly
+# triangle=integral
+s=input("Enter the string :- ")
+s1=input("Enter second  string :- ")
+
+if sorted(s)==sorted(s1):
+  print("It is anagram")
+else:
+  print("It is not anagram")
+
+#                        list manupulation.
+l=[]
+l.append(10)
+l.append('shashi')
+l.append(False)
+print(l)
+
+1. insertion order
+2.duplicate order
+3.Hetrogenous order
+4. Dynamic order
+5. mutable
+6. representation : []
+7. indexing
+8. slicing
+9. concatenation
+10. repetation
+
+
+creation of list object
+
+1. empty list
+li=[]
+print(type(li))
+
+
+2. list with elements
+li=[10,20,30,40,50]
+print(li)
+
+
+3. list with mixed elements
+li=[10,'shashi',True,20.5]
+print(li)
+
+4. list with dynamic 
+
+list1=int(input("Enter the number of elements :- "))
+
+li=[]
+for i in range(list1):
+  li.append(input("Enter the element :- "))
+print(li)
+
+5. list with slicing
+
+li=[10,20,30,40,50,60,70,80,90]
+print(li[0:3])
+
+6. list with dynamic slicing.
+
+list1=int(input("Enter the number of elements :- "))
+li=[]
+
+for i in range(list1):
+  li.append(input("Enter the element :- "))
+  print(li[2:])
+
+  
+
+
+# write code in python for list manupulation.
+
+list1=[]
+num=int(input("Enter the number of elements :- "))
+for i in range(num):
+  list1.append(input("Enter the element :- "))
+  if list1[i].isnumeric():
+    print(list1[i])
+  else:
+    print("It is not a number")
+
+
+
+# write code in python for list manupulation.
+
+list1=['apple','banana','mango','grapes','orange','pineapple','papaya']
+
+for i in list1:
+  if i.startswith('p'):
+    print(" the fruits start with latter P",i)
+  else:
+    print("the fruits does not start with latter P",i)
+
+
+# write code for the list manupulation.
+
+num = int(input("Enter the number of element :- "))
+
+lis = []
+for i in range(num):
+  lis.append(input("Enter the element :- "))
+print("\n\n", lis)
+print(" ", lis[:-1])
+
+# write code in python for check whether elements of two lists are same or not.
+
+num=int(input("Enter size :- "))
+list1=[]
+list2=[]
+
+for i in range(num):
+  list1.append(int(input("Enter the element for list1 :- ")))
+for j in range(num):
+  list2.append(int(input("Enter the element for list2 :- ")))
+
+if list1== list2 :
+  print("The list are same")
+else:
+  print("The list are not same")
+  
+# access list element by while loop.
+
+list1=[1,2,3,4,5,6,7,8,9,10]
+
+i=0
+while(i<len(list1)):
+  print(" +ve mode ",list1[i])
+  i=i+1
+print("\n\n")
+i=len(list1)-1
+while(i>=0):
+  print(" -ve mode ",list1[i])
+  i=i-1
+
+
+
+# write code in python for  mathematical list operations.
+
+list1=[2,23,4,45,32,453]
+list2=[12,56,45,4567,3423,342]
+print(sorted(set(list1+list2)))
+
+
+equality operators for list objects
+
+l1=['dog','cow','horses','rat']
+l2=['rat','horse','cow','dog']
+l3=['horse','cow','dog','rat']
+print(l1==l2)
+print(l1==l3)
+print(l1!=l2)
+print(l1!=l3)
+
+
+
+important methods for list 
+1.len():- it is used to find the length of the list.
+2.append():- it is used to add the element at the end of the list.
+3.sorted():- it is used to sort the list in ascending order.
+4.count():- it is used to count the number of occurences of the element in the list.
+5.index():- it is used to find the index of the element in the list.
+6.insert():- it is used to insert the element at the given index in the list.
+7.remove():- it is used to remove the element from the list.
+8.pop():- it is used to remove the element from the list at the given index.
+9.reverse():- it is used to reverse the list.
+10.clear():- it is used to clear the list.
+11.copy():- it is used to copy the list.
+12.extend():- it is used to extend the list.
+13.min():- it is used to find the minimum element in the list.
+14.max():- it is used to find the maximum element in the list.
+15.sum():- it is used to find the sum of the elements in the list.
+16.count():- it is used to count the number of occurences of the element in the list.
+17.index():- it is used to find the index of the element in the list.
+18 sort():- it is used to sort the list in ascending order.
+
+# write code for comparision of the list objects.
+
+list1=['Manish']
+list2=['Manisha']
+print(list1<list2)
+
+# write code in python for find the maximum and minimum element in the list.
+
+num=int(input( "Enter the number of elements :- "))
+list1=[]
+
+for i in range(num):
+  list1.append(int(input("Enter the element :- ")))
+print("maximum element is",max(list1))
+print("minimum element is",min(list1))
+
+
+# write code for finding the occurences of the element in the list.
+
+num=int(input("Enter the number of elements :- "))
+list1=[]
+for i in range(num):
+  list1.append(int(input("Enter the element :- ")))
+print("The occurences of the element is",list1.count( 1 ))
+
+# write code for print the list in reverse order from the given number
+
+num=int(input("Enter the number "))
+for i in range(num,0,-1):
+  print(i, end=' ')
+
+
+# write code in python for access the random elements from the list.
+
+import random as r
+
+lis=[1,2,3,4,5,6,7,8,9,10,'python','is ','very','popular','programming','language']
+print(r.choice(lis))
+
+
+# write code in python for the finding the type of element present in python and its indiex and address.
+
+list1=['shashi',False,10.2,30,34+0j]
+for i in range(len(list1)):
+  print("the type of element is",type(list1[i]),"and the index is",i,"and the address is",id(list1[i]))
+print("Code ends here")
+
+
+# write code in python for implimenting pop method.
+list1=[]
+
+num=int(input("Enter size :- "))
+
+for i in range(num):
+        list1.append(int(input("Enter element :- ")))
+for j in range(num):
+        print(list1.pop())
+print(list1)
+print(len(list1))
+    
+
+# write code for implimenting the sorted method and sort menthod in list.
+
+list=['cat','animal','bird']
+
+print("implimenting sorted menthod ",sorted(list))
+print("\n\nimplimenting sort method",list.sort())
+
+
+# write code in python for implimenting the clear method in python.
+
+list1=[1,2,3,4,5]
+print(list1.clear())
+print("After clearing the list :- ",len(list1))
+
+# write code for appending the random elements in the list.
+
+import random as r
+list1=[]
+for i in range(5):
+  list1.append(r.randint(1,100))
+print("after appending the random elements in the list :- ",list1,len(list1))
+
+
+# write code in python for implimenting the insert method in list.
+
+from typing import _SpecialForm
+
+
+num=int(input("Enter the size of list :-  "))
+
+list1=[]
+
+for i in range(num):
+  list1.append(int(input("Enter the element :- ")))
+print("Before inserting the element :- ")
+list1.insert(2,10)
+print("After inserting the element :- ",list1)
+
+  
+ # write code for insert and deleting all the element from the list .
+
+list=[]
+
+for i in list:
+  list.append(int(input("Enter the element :- ")))
+  print(list)
+
+print("Before deleting the element :- ",list)
+
+
+
+for i in list:
+  list.remove(i)
+  print(list)
+
+print("After removing the element :- ",list )
+
+
+# write code to implimenting Alasing and cloning in the list of the onject.
+
+l1=[10,1201,123,2]
+l2=l1
+l1[1]=100
+print(l1)
+print(l2)
+print(id(l1))
+print(id(l2))
+
+# object cloning
+
+l1=[10,20,30,40]
+
+l2=l1[::]    #1 method
+l2=l1.copy() #2 method
+
+l2[1]=12
+print("l1   ",l1)
+print('l2   ',l2)
+print(id(l1))
+print(id(l2))
+
+# write code for implimenting Nested List in python.
+
+
+for x in l:
+  for y in x:
+    print(y,end=' ')
+  print()
+
+l=[[10,20,30],[40,50,60],[70,80,90]]
+for x in l:
+  print(x)
+
+# write code for implimenting list comprehension in python.
+
+# Syntax :- [expression for item in iterable if condition]
+
+l=[int(l%2==0) for l in range(0,101)]
+print(l)
+
+# write code for implimenting list comrehension in python where my output = [1,2,9.16.25,36].
+
+l=[l*l for l in range(1,7)]
+print(l)
+
+# write code to impliment a list which is not present in the list 2.
+l1=[30,40,50,60,70]
+l2=[10,20,30,40,50,60,70]
+l3=[x for x in l1 if x  in l2]
+print(l3)
+
+# write code for implimenting the list which is present in the list 1 and 2.
+
+words='The quick brown fox jumps over the lazy dog. '
+
+x = [[c.upper(), len(c)] for c in words]
+print(x)
+
+
+# Touple data structure.
+
+
+# write code for implimenting the touple in python.
+t1=(1,'shashi','d','e')
+t=1,'shashi','d','e'
+print(type(t))
+print(t[0])
+print(t[-1])
+
+# write code for implimenting the touple in python.
+
+t=('shashi',12,5+20j,True,10.2)
+print(type(t))
+t=(12,12,13)
+t1=(12,12,13)
+print(t==t1)
+
+import sys
+
+tup = (1, 2, 3, 4, 5, 6)
+
+# Get the size of the tuple in bytes
+size_of_tuple = sys.getsizeof(tup)
+
+print(f"Size of the tuple: {size_of_tuple} bytes")
+
+
+import sys
+
+tup = (1, 2, 3, 4, 5, 6)
+
+# Get the size of the tuple in bytes
+size_of_tuple = sys.getsizeof(tup)
+
+print(f"Size of the tuple: {size_of_tuple} bytes")
+
+
+
+# write code in python for implimenting the tuple in the list.
+
+
+tr=(12,13,13,45,45,34,56,34,75)
+s=sorted(tr)
+print(s)
+print()
+
+trf=[12,23,4,33322222,3232]
+print(set(trf))
+print(tuple(set(trf)))
+
+
+# write code in python for implimenting the set concept.
+
+s={1,2,3,4,5,6}
+s1={1,3,7,8,9,10}
+s3=s1.union(s)
+
+print(s3)
+
+# write code to impliment dictonary concept in python.
+
+d={'name':'shashi','age':24,'gender':'male'}
+print(d.values())
+print(d.keys())
+print(d.items())
+print(d.get('name'))
+print(d.get('age'))
+print(d.get('gender'))
+
+
+# write code in python for accept
+n=int(input("Enter number of student :- "))
+
+d={}
+for i in range(n):
+  name=input("Enter the name :- ")
+  marks=int(input("Enter the marks :- "))
+  d[name]=marks
+print(d)
+ 
+
+# write code for dictonary comrehension in python.
+d={x:x**2 for x in range(1,11)}
+print(d)
+
+# write code for list merging 
+l1=[12,24]
+l2=[36,48]
+print(l1+l2)
+
+
+# write code for touple merging
+t1=(10,20)
+t2=(30,40)
+print(t1+t2)
+
+# write code for implimenting python method.
+def add(a,b):
+  print(a*b)
+  
+add(10,20)
+
+
+# write code to impliment method in python for creating list.
+
+def create_list(n):
+  list=[]
+  for i in range(n):
+    list.append(int(input("Enter the element :- ")))
+  print(sorted(list))
+  
+create_list(5)
+
+# write code in python for impliment method to display the given number is even or odd.
+def even_odd(n):
+
+  for i in range(n):
+    if i%2==0:
+      print(i,"  Even number")
+    else:
+      print(i ,"  Odd number ")
+even_odd(10)
+
+
+# write code for impliment method concept for creating touple.
+def create_touple(n):
+  d=[]
+  for i in range(n):
+    d.append(int(input("Enter the element :- ")))
+    print(tuple(d))
+  print("after sorting elements are :- ",tuple(sorted(d)))
+create_touple(5)
+
+
+a=12
+b=34
+print("the sum ",a+b)
+print("the difference",a-b)
+print("the product",a*b)
+a=45
+b=67
+print("the sum ",a+b)
+print("the difference",a-b)
+print("the product",a*b)
+a=12
+b=56
+print("the sum ",a+b)
+print("the difference",a-b)
+print("the product",a*b)
+
+def x(a,b):
+  print("the sum ",a+b)
+  print("the difference",a-b)
+  print("the product",a*b)
+x(23,67)
+print("\n\n")
+x(12,34)
+
+# this is advantage of function in python which means we can use the same code for difference input and code reusablity is implimented by function in python.
+
+Syntax : def function_name(parameters):
+
+def shashi(a,b):
+method body
+
+return value
+
+
+
+
+
+
+# write function to print wishing message to the user.
+
+def wishing(name):
+  print("Good morning",name)
+wishing("Shashi")
+
+
+def square(n):
+  print("Square of the number is :- ",n*n)
+square(5)
+
+
+
+
+
+def input_product():
+    product = input("Enter the product name: ")
+    receiver = input("Enter the receiver name: ")
+
+    if product == "Mobile":
+        print("How can I assist you?")
+        if receiver == "I want to buy mobile":
+            specifications = input("Enter mobile specifications: ")
+            if specifications == "I want to buy mobile with specifications":
+                print("Yes, we have mobile with specifications.")
+            else:
+                print("No, we don't have mobile with specifications.")
+    elif product == "Laptop":
+        print("This product is not available.")
+    else:
+        print("We are sorry!")
+
+input_product()
+
+
+
+
+# write code for implimenting the concept of function in python .
+
+def sub(a,b):
+  print("the subtraction of two number is :- ",a-b)
+sub(12,34)
+
+
+
+
+
+
+def hello(a):
+
+
+    if current_hour < 12:
+        print("Good Morning", a)
+    elif current_hour < 18:
+        print("Good Afternoon", a)
+    else:
+        print("Good Night", a)
+
+hello("Sri Ram")
+
+
+
+from datetime import datetime
+import pytz
+
+def get_ist_time():
+    # Get the current UTC time
+    utc_now = datetime.utcnow()
+
+    # Specify the time zone for India (Indian Standard Time)
+    ist_timezone = pytz.timezone('Asia/Kolkata')
+
+    # Convert UTC time to IST
+    ist_time = utc_now.replace(tzinfo=pytz.utc).astimezone(ist_timezone)
+
+    return ist_time
+
+if __name__ == "__main__":
+    ist_time = get_ist_time()
+    print("Current time in Indian Standard Time (IST):", ist_time.strftime('%Y-%m-%d %H:%M:%S %Z'))
+
+
+
+# wrtie code in python for impliment python function concept to find the addition of two number.
+
+def add(a,b):
+  print("addition of two number is :- ",a+b)
+  print("Subtraction of two number is :- ",a-b)
+  print("Multiplication of two number is :- ",a*b)
+  print("Division of two number is :- ",a/b)
+add(20,10)
+
+
+# write code in python to impliment positional arguments in python function .
+
+def sub(a,b):
+  print(a-b)
+sub(4,2)
+# Here we are passing the value in arguments according to parmeters in the function.
+
+
+# write code in python to impliment keyword arguments in python function.
+
+def sub(a,b):
+  print(a-b)
+sub(a=100,b=400)
+
+# here we implimented keywords arguments .
+
+
+# write code in python to impliment default arguments in python function.
+def wish(name="ShreeRam"):
+  print("Jai",name)
+wish()
+
+# write code in python to impliment concept of python .
+
+def maths(a,b):
+  print("Addition of two number :- ",a+b)
+maths(10.4,20.4)
+
+
+# write code in python to impliment the prime number concept in python via python function.
+
+def prime(n):
+
+  num=2
+  for i in range(n):
+    if n%num==0:
+      print("The number is not prime")
+      break
+    else:
+      print("The number is prime")
+  
+prime(17)
+
+
+
+# write code in python to impliment the concept  python function.
+
+def dfg(a,b):
+  print("the subtraction of two number is :- ", a-b)
+dfg(a=20,b=3)
+
+
+# write code in python to impliment the concept of python function to find the vowels in the string.
+
+def vowels(s):
+
+  vowels="aeiouAEIOU"
+  count=0
+  for i in s:
+    if i not in vowels:
+      count+=1
+  print("The number of consonent in the string is :- ",count)
+vowels("Dhanbad")
+
+
+# write code in python for implimetion of python function to find the consonent and vowels in the string .
+
+
+def covowels(s):
+  vowels = 'AEIOUaeiou'
+  vowel_count = 0
+  consonant_count = 0
+
+  for char in s:
+    if char in vowels:
+      vowel_count += 1
+    else:
+      consonant_count += 1
+
+  print("The number of vowels in the string is:", vowel_count)
+  print("The number of consonants in the string is:", consonant_count)
+
+
+covowels("Dhanbad")
+
+# write code in python to impliment maths module by python function.
+
+import math as m 
+
+print(m.sqrt(25))
+print(m.pow(2,3))
+print(m.factorial(5))
+print(m.ceil(2.3))
+print(m.cos(45))
+print(m.fabs(123.5))
+
+
+
+# write code in python to impliment the concept of python funtion to find the permutation and combination in the python 
+
+import math as m
+
+n=int(input("Enter the value of n :- "))
+r=int(input("Enter the value of r :- "))
+print("The permutation of the number is :- ",m.perm(n,r))
+print("The combination of the number is :- ",m.comb(n,r))
+
+
+# write code in python to impliment the concept of python function to find the even and odd number the given list.
+
+def even_odd(l):
+  for i in l:
+    if i%2==0:
+      print(i,"  Even number")
+    else:
+      print(i ,"  Odd number ")
+even_odd([1,2,3,4,5,6,7,8,9,10])
+
+# write code in python to impliment the concept of python function to find the length of the string and the reverse of the string.
+
+def s(a):
+
+  print("The length of the string is :- ",len(a))
+  print("The reverse of the string is :- ",a[::-1])
+s("New Town Kolkata ")
+
+# write code in python to impliment the concept of python function to print the table of the given number.
+
+def table(n):
+  for i in range(1, 11):
+      print(n, "*", i, " = ", n * i)
+
+# Take user input
+number = float(input("Enter the number: "))
+table(number)
+
+
+# write code in python to impliment the concept of python function to find the random number in the given range.
+
+
+
+from random import randint
+
+def random_Otp():
+    otp = ""
+    for i in range(6):
+        otp += str(randint(0, 9))
+    return otp
+
+for i in range(1, 4):
+    print("OTP of 6 digits:", random_Otp())
+
+
+# write code in python to impliemt the concept of Class and object in python.
+
+class student:
+  def __init__(self):
+    self.name="shashi"
+    self.location="Hyderabad"
+    self.age=24
+    self.gender="male"
+    
+
+  def show(self):
+    print("Name of the student is :- ",self.name)
+    print("Location of the student is :- ",self.location)
+    print("Age of the student is :- ",self.age)
+    print("Gender of the student is :- ",self.gender)
+object1=student()
+print(object1.show())
+
+print(id(object1))
+
+class name:
+  def __init__(self,name1):
+    self.name1=name1
+    print("My name is :- ", self.name1)
+
+df=name("prety")
+
+from sys import _current_frames
+
+
+def bank_details():
+  print("Press w for withdrawal")
+  print("Press d for deposit")
+  print("Press b for check balance")
+  print("Press e for exit")
+
+def withdrawal(balance):
+  amount = int(input("Enter the amount to withdraw: "))
+  if amount > balance:
+      print("Insufficient balance")
+  else:
+      balance -= amount
+      print("Your balance is: ", balance)
+
+def deposit(balance):
+  current_balance = float(input("Enter amount to deposit: "))
+  balance += current_balance
+  print("Your current balance is: ", balance)
+
+def check_balance(balance):
+  print("Your current balance is: ", balance)
+
+def exit_program():
+  print("Thank you for using our banking services")
+
+balance = 0
+
+while True:
+  bank_details()
+  choice = input("Enter your choice: ")
+  if choice == "w":
+      withdrawal(balance)
+  elif choice == "d":
+      deposit(balance)
+  elif choice == "b":
+      check_balance(balance)
+  elif choice == "e":
+      exit_program()
+      break
+  else:
+      print("Invalid choice")
+
+
+
+class Outer:
+  def __init__(self):
+    print("Outer class")
+  class Inner:
+    def __init__(self):
+      print("Inner class")
+    def m1(self):
+      print("Inner class method")
+o=Outer()
+i=o.Inner()
+i.m1()
+
+# write code to impliment HAS-A relationship in python.
+class Student:
+
+    def __init__(self, name, age, gender):
+        self.name = name
+        self.age = age
+        self.gender = gender
+
+    def show(self):
+        print("Name of the student is: ", self.name)
+        print("Age of the student is: ", self.age)
+        print("Gender of the student is: ", self.gender)
+
+
+s = Student("Dhawan", 25, "Male")
+s.show()
+
+# write code in python to impliment the concept of class and object in python.
+
+class study:
+
+  def __init__(self,name,department,study_subject,):
+    self.name=name
+    self.department=department
+    self.study_subject=study_subject
+  def show(self):
+    print(self.name)
+    print(self.department)
+    print(self.study_subject)
+
+s=study(name="avinash",department="software engineer",study_subject="python")
+s.show()
+
+# write code in python to impliment the concept of class and object in python.
+
+class mine:
+
+  def __init__(self,name,designation,salaery,location):
+    self.name=name
+    self.designation=designation
+    self.salaery=salaery
+    self.loaction=location
+  def show(self):
+    print(" Employee name is :- ",self.name)
+    print(" Employee designation is :- ",self.designation)
+    print("Employee salaery is :-",self.salaery)
+    print(" Employee working location is :- ",self.loaction)
+
+s=mine("shashi","software engineer",30000, "Hyderabad")
+s.show()
+
+
+class Test:
+  def s(self, *args):
+      print("{} arguments function".format(len(args)))
+      for arg in args:
+          print(arg)
+
+t = Test()
+t.s(1)
+t.s(2)
+t.s(34, 56, 3)
+
+ 
+
+def pattern(n):
+    for i in range(n):
+        for j in range(i + 1):
+            print("@", end='')
+        print()
+
+pattern(5)
+
+
+# write code in python for sum of minimum number and maximum number from the list.
+
+def min_max_sum(arr):
+  # Sort the array to easily find the minimum and maximum sums
+  arr.sort()
+
+  # Calculate the sum of all elements
+  total_sum = sum(arr)
+
+  # Minimum sum: sum of first four elements
+  min_sum = total_sum - arr[-1]
+
+  # Maximum sum: sum of last four elements
+  max_sum = total_sum - arr[0]
+
+  return min_sum, max_sum
+
+# Example input
+arr = [1, 3, 5, 7, 9]
+
+# Calculate the minimum and maximum sums
+min_sum, max_sum = min_max_sum(arr)
+
+# Print the results
+print(min_sum, max_sum)
+
+ 
+
+# write code in python for sorting the list in the assending order.
+
+firs=int(input("Enter test case :- "))
+lis=[]
+for i in range(firs):
+  array_size=int(input("Enter the size of the list :- "))
+  for j in range(array_size):
+    
+    lis.append(int(input("Enter the list :-  ")))
+
+  print(sorted(lis))
+
+# write code in python for swap of two number 
+a, b = map(int, input("Enter the two numbers separated by a space: ").split())
+print("Before Swaping :- ",a,b)
+a,b=b,a
+print("After swaping :- ",a,b)
+
+li = []
+test_case = int(input("Enter the test case: "))
+for i in range(test_case):
+    li.append(int(input("Enter the element for the list: ")))
+
+found_unique = False
+for i in range(test_case):
+    if li.count(li[i]) == 1:
+        print("Unique element:", li[i])
+        found_unique = True
+        break
+
+if not found_unique:
+    print("No unique element")
+
+
+# write code in python for impliment the concept of function .
+
+def name(First_name, Last_name):
+    print("Good Afternoon :)", First_name, Last_name)
+    print("Thank you :)")
+
+name(First_name="Prince", Last_name="Pandey")
+
+# write code in python for sorting the list as per the user input.
+
+def sort_list(arr):
+  num = input("Enter how you want to sort the list ('ao' for ascending order, 'do' for descending order): ")
+
+  if num == "ao":
+      return sorted(arr)
+  elif num == "do":
+      return sorted(arr, reverse=True)
+  else:
+      return "Invalid input"
+
+# Example usage:
+arr = [4, 2, 7, 1, 9]
+sorted_arr = sort_list(arr)
+print("Sorted list:", sorted_arr)
+
+
+# write code in python for rotate the list as user input.
+
+li=[1,2,3,4,5,6 ]
+
+num=int(input("Enter the number for rotate the list :- "))
+for i in range(len(li)):
+  if i==num:
+    print(li[i:]+li[:i])
+
+print("The list is not rotate")
+    
+  
+# write code in python for merging two list.
+
+def merge(arr1,arr2):
+  print("Merging two list :- ",arr1+arr2)
+arr1=[1,3,4,5,6]
+arr2=[7,8,9,10]
+merge(arr1,arr2)
+
+
+# write code in python for.
+li=[]
+test_case=int(input("Enter number of test case :- "))
+for i in range(test_case):
+  num=int(input("Enter the number  of elements :- "))
+  for j in range(num):
+    li.append(int(input("Enter the number :- ")))
+    if li[j].count(li[j]) > 1:
+      print("Dublicate number is :- ",li[j])
+      
+# write code in python for
+li=[]
+sum=0
+test_case=int(input("Enter the test case :- "))
+for i in range(test_case):
+    s_o_l=int(input("Enter size of list :- "))
+    for j in range(s_o_l):
+        li.append(int(input("Enter element :- ")))
+        sum = sum+li[j]
+        print(sum)
+
+        
+# write code in python for n-th fibonacci number.
+
+def fibonacci(n):
+  if n <= 1:
+      return n
+  else:
+      fib = [0, 1]
+      for i in range(2, n + 1):
+          fib.append(fib[i - 1] + fib[i - 2])
+      return fib[n]
+
+num = int(input("Enter the number: "))
+print("The", num, "th Fibonacci number is:", fibonacci(num))
+
+# write pytohn code for pair sum problem.
+li = [1, 2, 3, 4, 5]
+num=int(input("Enter the number for pair sum :- "))
+for i in range(len(li)):
+    for j in range(len(li)):
+        if li[i] + li[j] == num:
+            print(li[i], li[j])
+
+
+
+# write code in python for implimenting NumPy array.
+
+import numpy as np 
+arr= np.array([1,2,3,4,5])
+print(arr)
+print(type(arr))
+
+# write code in python for add the maximum element and minimum element in the list.
+
+li=[1,2,4,-4,5]
+for i in li:
+  sum=max(li)+min(li)
+print("Sum of the maximum element and element is :- ",sum)
+
+
+
+# write code to print reverse of the given string
+
+strin=input("Enter the given string :- ")
+
+for i in range(len(strin)-len(strin)+1):
+  print(strin[i])
+  i=i-1
+
+
+
+
+def print_multiplication_table(number):
+  print(f"Multiplication Table for {number}:")
+  for i in range(1, 11):
+      print(f"{number} x {i} = {number * i}")
+
+# Example usage:
+number = int(input("Enter a number: "))
+print_multiplication_table(number)
+
+
+
+def name(fname,lname):
+  print("Hello",fname,lname)
+name(fname="Prince",lname="Pandey")
+  
+
+
+# write code in python forfind those numbers which are divisible by 7 and multiples of 5, between 1500 and 2700 (both included).
+
+for i in range(1500,2701):
+  if i%7==0 and i%5==0:
+    print(i)
+    
+  
+
+# write code in python for convert tamrature in celsius to fahrenheit.
+
+temp=float(input("Enter the tamprature in celicus:- "))
+fa=temp*1.8+32
+print("The tamprature in fahrenheit is :- ",float(fa))
+
+
+# write code in python for find guessed number between 1 to 100.
+
+import random
+
+number= random.randint(1,101)
+guess=int(input("Enter number you entered :- "))
+
+print("print the guessed number is :- ",number)
+
+if number == guess:
+  print("You won the game")
+else:
+  print("you loose")
+  
+
+
+
+#Write a Python program that checks whether a string represents an integer or not.
+
+str=input("Enter the string :- ")
+if str.isdigit():
+  print("The string is integer")
+else:
+  print("The string is not integer")
+
+
+
+# write code in python for remove the dublicates vlaues from the list.
+
+li=[1,2,3,4,3,2,1,3,5,3,2,1,3]
+
+li=set(li)
+print(list(li))
+
+# write code in python for returning multiples values from python methods
+
+
+def fun():
+  a = int(input("Enter the first number :- "))
+  b = int(input("Enter second number :- "))
+  c = int(input("Enter third value :- "))
+
+  return a, b, c
+
+
+a, b, c = fun()
+print(a, b, c)
+
+
+# write code in python for merge two sorted list.
+
+i=[]
+j=[]
+
+num=int(input("Give number :- "))
+for k in range(num):
+  i.append(int(input("Enter the number :- ")))
+num1=int(input("Enter list size for second list :- "))
+for m in range(num1):
+  j.append(int(input("Enter the number :- ")))
+print(sorted(i+j))  
+
+
+# write code in python for search the element in list.
+
+li=[]
+
+num=int(input("Enter the number of element :- "))
+
+for i in range(num):
+  li.append(int(input("Enter the number :- ")))
+search=int(input("Enter the number to search :- "))
+for i in range(num):
+  if li[i]==search:
+    print("The element is present in the list")
+    break
+
+
+# write code in python for arrange the string in accesing order.
+
+li=[]
+for i in range(5):
+  li.append(input("Enter the string :- "))
+  li.sort()
+print(li)
+
+
+#    Search Insert Position
+li=[1,2,43,65,7864,90,4567,8976]
+
+num=int(input("Enter the number:- "))
+for i in range(len(li)):
+  if li[i]==num:
+    print(i)
+    break
+
+# write code in python for find the length of the last word.
+
+string = input("Enter the string :-  ")
+li = string.split()
+print(len(li[-1]))
+'''
+
+
