@@ -1,3 +1,5 @@
+1.
+
 import java.io.IOException;
 import java.util.Scanner;
 /*
@@ -19,6 +21,10 @@ class Sum {
 
 
 */
+
+2. 
+
+
 class name
     {
         public static void main(String args[])
@@ -47,3 +53,41 @@ Scanner sc= new Scanner(System.in);
             }
         }
     }
+
+
+3. 
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Print {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of times you want to print Hello World:");
+        int num = sc.nextInt();
+        sayHello(num);
+    }
+
+    public static void sayHello(int num) {
+        for (int i = 1; i <= num; i++) {
+            System.out.println("Hello World");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
