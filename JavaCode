@@ -1,0 +1,49 @@
+import java.io.IOException;
+import java.util.Scanner;
+/*
+class Sum {
+    public static void main(String[] args) throws IOException {
+        int num1, num2;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the first number: ");
+        num1 = sc.nextInt();
+
+        System.out.print("Enter the second number: ");
+        num2 = sc.nextInt();
+
+        System.out.println("The sum of two numbers is: " + (num1 + num2));
+    }
+}
+
+
+
+*/
+class name
+    {
+        public static void main(String args[])
+        throws IOException
+        {
+            String name;
+Scanner sc= new Scanner(System.in);
+            System.out.print("Enter the name :- ");
+            name=sc.nextLine();
+
+            if(name=="Dog")
+            {
+                System.out.println("Thats a Dog");
+            }
+            else if (name=="Cat")
+            {
+                System.out.println("Thats a Cat");
+            }
+            else if (name=="Cow")
+            {
+                System.out.println("Thats a Cow");
+            }
+            else 
+            {
+                System.out.println("Better luck next time ");
+            }
+        }
+    }
