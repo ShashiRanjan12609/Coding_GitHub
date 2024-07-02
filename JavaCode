@@ -76,7 +76,29 @@ public class Print {
 }
 
 
+4. 
 
+import java.io.IOException;
+import java.util.*;
+
+public class M {
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter your name: ");
+        String name = sc.next();
+        
+        Meth meth = new Meth(name);
+        
+        System.out.println("Successfully Executed");
+    }
+}
+
+class Meth {
+    public Meth(String name) {
+        System.out.println("Your name is: " + name);
+    }
+}
 
 
 
