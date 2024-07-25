@@ -1,0 +1,126 @@
+......................................................................................................................................................................................................................
+......................................................................................................................................................................................................................
+                                                                                          Numpy 
+......................................................................................................................................................................................................................
+......................................................................................................................................................................................................................
+
+# write code for sort an element using numpy.
+
+import numpy as np
+
+s=np.array([12,34,23])
+s.sort()
+print(s)
+
+# write code to using Numpy to sort each column of 2-D Array.
+import numpy as np
+
+a=np.array([[112,2,93,94],[84,1160,788,8],[900,1,118,192]])
+for i in range(len(a)):
+    for j in range(len(a)):
+        a.sort()
+    print(a[i])
+
+
+
+# write code in python for arrage the element
+
+import numpy as np
+
+print(np.arange(4))
+print(np.copy(np.arange(4)))
+print(reversed(np.copy(np.arange(4))))
+
+
+# write code in python to impliment argsoft in numpy pandas.
+
+import numpy as np
+
+x= np.array([[1,2],[3,4]])
+y=np.array([[5,6]])
+print(x+y)
+
+
+# write code in python for making 2 D array into 1 D array
+import numpy as np
+a=np.array([[1,2,3],[2,3,4],[3,4,5],[4,5,6]])
+b= a.reshape(6,2)
+print(b)
+
+
+
+# write code know shape and size of array in numpy python.
+
+import numpy as np
+
+s=np.array([12,34,56,23])
+print(s.shape)
+print(s.size)
+
+
+
+import numpy as np
+
+arr=np.array([1,23,45,], dtype=float)
+print(arr.dtype)
+
+print(arr[0:4])
+
+
+
+import numpy as np
+
+import numpy as np
+
+arr1=np.array([1,2,3])
+aar2=np.array([4,5,6])
+print(arr1*aar2)
+
+print(np.sin(arr1))
+
+import numpy as np
+
+s=np.array([12,34,56])
+b=np.array([67,89,56])
+
+print(s+b)
+
+
+import numpy as np
+
+n=np.array([34,56,36,78,21])
+
+
+
+for i in range(3):
+
+    randoms=np.random.randint(10,99,size=5)
+    if randoms is n:
+
+       print(randoms)
+    else:
+        print("Try after 24 Hours ")
+
+
+# write code in python for finding minimum value among the array elements.
+
+import numpy as np
+
+
+s=np.array([23,45,32,432,345443,2342123])
+print(s.min())
+
+s=np.array([0,np.pi/2,np.pi])
+print(s)
+
+
+# write code in python for creating an array with all zeros
+
+import numpy as np
+
+arrays=np.ones((5,5))
+twos=np.zeros((5,5))
+print(arrays+twos)
+
+'''
+# write code in python for 
