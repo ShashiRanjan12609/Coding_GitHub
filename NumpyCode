@@ -123,4 +123,87 @@ twos=np.zeros((5,5))
 print(arrays+twos)
 
 '''
-# write code in python for 
+Sure! Here are ten NumPy problems ranging from basic to medium level, without code:
+
+Basic Level
+Array Creation:
+
+Create a NumPy array from a Python list containing integers. What is the resulting NumPy array?
+Array Dimensions:
+
+Given a NumPy array, determine its shape and the number of dimensions it has.
+Array Indexing:
+
+Access a specific element in a 2D NumPy array using indexing. What value does it return?
+Array Slicing:
+
+Slice a 1D NumPy array to extract a sub-array. What is the resulting sub-array?
+Array Reshaping:
+
+Reshape a 1D NumPy array into a 2D array with a specified number of rows and columns. What does the reshaped array look like?
+Medium Level
+Element-wise Operations:
+
+Perform element-wise addition or multiplication on two NumPy arrays. What does the resulting array look like?
+Broadcasting:
+
+Apply broadcasting to perform an operation between arrays of different shapes. What is the result of the operation?
+Aggregation Functions:
+
+Calculate the sum, mean, and standard deviation of a NumPy array. What are the values for these statistical measures?
+Matrix Multiplication:
+
+Perform matrix multiplication between two 2D NumPy arrays. What is the result of the matrix multiplication?
+Boolean Indexing:
+
+Use a condition to filter elements from a NumPy array. For example, extract elements greater than a certain value. What is the resulting filtered array?
+
+
+# 1 .
+
+import numpy as np
+
+lists=[12,34,56]
+s=np.array(lists)
+print(type(s))
+
+
+
+import numpy as np
+
+shapes=np.array([12,34,545])
+print(shapes.shape)
+
+
+
+# 3.
+
+import numpy as np
+
+# Creating a 2D NumPy array
+numpy_array = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+# Accessing a specific element (e.g., element at row 1, column 2)
+specific_element = numpy_array[1, 2]
+
+print("NumPy Array:")
+print(numpy_array)
+print("Element at row 1, column 2:", specific_element)
+
+
+#4.
+
+import numpy as np
+
+s=np.array([1,2,3,4,5,6])
+print(s[::-1])
+print(s[0:4])
+'''
+
+#5.
+
+import numpy as np
+
+s=np.array([12,2,3,45,342,3,2])
+
+print(s)
