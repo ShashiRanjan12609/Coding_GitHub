@@ -89,3 +89,49 @@ Describe the steps to create a pivot table, including specifying the index, colu
 How do you apply a custom function to each element of a DataFrame or a specific column?
 
 Explain how to use functions like apply to perform operations on each element of a DataFrame or a specific column.
+
+
+
+import pandas as pd
+import numpy as np
+
+df=pd.read_csv(r"C:\Users\HP\Downloads\Python CSV File\athlete_events.csv")
+'''
+#print(df)
+#2
+
+print(df.head)
+
+
+#3. to get summary of the dataframe including the data types and non null values.
+
+print(df.info)
+
+# 4.
+print(df["Age"])
+
+#5
+print(df["Age"]>20)
+
+
+#6
+print(df.fillna('0'))
+
+#7.
+print(df.groupby(["Age"]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
