@@ -1,0 +1,91 @@
+
+......................................................................
+.....................................................................
+
+                            Pandas
+...................................................................
+..................................................................
+
+import pandas as pd
+
+data=[1,2,3,4,5]
+series=pd.Series(data)
+print(series)
+
+
+
+import pandas as pd
+
+df=pd.DataFrame([[1,2,3],[4,5,6],[7,8,9]], columns =["A","B","C"])
+print(df.head())
+print(df.tail(),"\n\n\n ")
+
+print(df.columns)
+print(df.info())
+
+
+
+import pandas as pd
+import numpy as np
+
+df=pd.read_csv(r"C:\Users\HP\Downloads\Python CSV File\athlete_events.csv")
+
+
+#print(df.head())
+#print(df.iloc[5])
+#print(df.discribe())
+
+name=df.groupby("Age").sum()
+print(name)
+
+name1 =df.min
+print(name1)
+fill=df.fillna("0")
+
+print(df.isnull().sum())    # summary of missing value 
+
+
+
+
+
+...................................................................
+...................................................................
+                            
+                                    QUESTIONS 
+..................................................................
+..................................................................
+
+
+Easy Questions
+How do you read a CSV file into a Pandas DataFrame?
+
+Explain the method used to read a CSV file and load it into a DataFrame.
+How do you display the first 5 rows of a DataFrame?
+
+What function would you use to see a quick preview of the DataFrame?
+How do you get a summary of the DataFrame, including the data types and non-null values?
+
+Which function provides a concise summary of the DataFrame's structure?
+Medium Questions
+How do you select a specific column from a DataFrame?
+
+Describe how to access a single column from the DataFrame.
+How do you filter rows based on a condition?
+
+Explain how to filter the DataFrame to include only the rows that meet a specific condition.
+How do you handle missing values in a DataFrame?
+
+Discuss the methods to handle missing data, such as dropping rows/columns or filling missing values.
+Hard Questions
+How do you group data by a column and apply an aggregate function?
+
+Describe how to group data by one or more columns and then apply an aggregate function like mean, sum, etc.
+How do you merge two DataFrames based on a common column?
+
+Explain the process of merging/joining two DataFrames on a common key.
+How do you create a pivot table from a DataFrame?
+
+Describe the steps to create a pivot table, including specifying the index, columns, and values.
+How do you apply a custom function to each element of a DataFrame or a specific column?
+
+Explain how to use functions like apply to perform operations on each element of a DataFrame or a specific column.
