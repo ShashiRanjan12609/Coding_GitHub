@@ -58,3 +58,30 @@ plt.ylabel('Value')
 plt.title('Yearly Trend')
 plt.grid(True)
 plt.show()
+
+
+# plot histogram 
+plt.figure(figsize=(10,5))   # set figure size
+
+dataframe["Age"].hist(bins=20)
+plt.xlabel("Age")
+plt.ylabel("Number of Athletes")
+plt.grid(True)
+plt.show()
+
+
+# plot scatter plot with ages number of atthletes
+
+# set fig size
+plt.figure(figsize=(10,5))
+
+# create scatter plot
+
+plt.scatter(df["Age"], df["Number of Athletes"], alpha=0.5)
+plt.xlabel("Ages")
+plt.ylabel("Number of Athletes")
+plt.grid(True)
+plt.show()
+
+
+
