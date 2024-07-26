@@ -40,3 +40,21 @@ medal.plot(kind='bar')
 plt.ylabel("Number of Medals")
 plt.xlabel("Medal Type")
 plt.show()
+
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample Data
+data = {'Year': [2010, 2011, 2012, 2013, 2014],
+        'Value': [100, 120, 130, 150, 155]}
+df = pd.DataFrame(data)
+
+# Line Plot
+plt.figure(figsize=(10, 5))
+plt.plot(df['Year'], df['Value'], marker='o')
+plt.xlabel('Year')
+plt.ylabel('Value')
+plt.title('Yearly Trend')
+plt.grid(True)
+plt.show()
