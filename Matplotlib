@@ -1,0 +1,42 @@
+import pandas as pd
+
+df=pd.read_csv(r"C:\Users\HP\Downloads\Python CSV File\athlete_events.csv")
+print(df.head())
+
+# we extrct columns from main dataset line 8
+dataframe=df[["Age","Height","Weight","Sport","Medal"]]
+'''
+# here we check from dataset line 8
+print(dataframe)
+
+# Age distribution dataframe lne 8
+
+dataframe["Age"].hist(bins=20)
+plt.xlabel("Age")
+plt.ylabel("Number of Athletes")
+plt.show()
+
+
+# here we are going to plot height and weight with scatter plot.
+plt.scatter(dataframe["Height"],df["Weight"])
+plt.xlabel("Height")
+plt.ylabel("Weight")
+plt.show()
+
+
+
+# here we are going to plot number of athelete in each sports .
+
+sports=dataframe["Sport"].value_counts()
+sports.plot(kind="bar")
+
+plt.xlabel("Sports")
+plt.ylabel("Number of Athletes")
+plt.show()
+
+
+medal=dataframe["Medal"].value_counts()
+medal.plot(kind='bar')
+plt.ylabel("Number of Medals")
+plt.xlabel("Medal Type")
+plt.show()
