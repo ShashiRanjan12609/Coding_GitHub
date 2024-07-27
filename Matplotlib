@@ -83,5 +83,10 @@ plt.ylabel("Number of Athletes")
 plt.grid(True)
 plt.show()
 
-
+plt.figure(figsize=(14,7))
+dataframe.boxplot(column="Age",by="Sport",rot=90,grid=False)
+plt.xlabel("Sport")
+plt.ylabel("Age")
+plt.grid(False)
+plt.show()
 
