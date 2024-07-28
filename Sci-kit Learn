@@ -155,3 +155,109 @@ print(f'Accuracy: {accuracy}')
 print(classification_report(y_test, predictions))
 
 
+
+
+
+........................................................................................................................
+........................................................................................................................
+                                        SIMPLE LINEAR REGRESSION
+........................................................................................................................
+........................................................................................................................
+'''
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+
+# Import the data set and analysing the data
+
+dataset=pd.read_csv(r"C:\Users\HP\Downloads\Python CSV File\Salary_Data.csv")
+x=dataset.iloc[:,:-1].values
+y=dataset.iloc[:,:1].values
+
+print(dataset.head())
+
+# dataset analyze
+#print(dataset.info)
+#print(dataset.describe())
+#print(dataset.columns)
+
+cc= dataset.corr()
+import seaborn as sns
+
+sns.heatmap(cc, vmax=1, square= True, annot=True, cmap='coolwarm')
+
+# split the dataset into train and test
+xtrain,xtest,ytrain,ytest=train_test_split(x,y,test_size=1/3,random_state=0)
+
+# creating linear regression object and fitting it on our trainning set.
+
+lr=LinearRegression()
+lr.fit(xtrain,ytrain)
+
+print(xtest)
+print(ytest)
+
+# predicting the test set result.
+
+yprediction = lr.predict(xtest)
+print("Prediction",yprediction)
+#print("Ytest",ytest)
+
+print("coefficient",lr.coef_)
+
+print(lr.intercept_)
+
+# predict
+
+pred_salary = lr.predict([[6]])
+print("predicted salary ",pred_salary)
+
+print(lr.coef_)
+
+print(lr.intercept_)
+''' 
+# visualizing the trainning test results
+
+plt.scatter(xtrain,ytrain,color='red')
+plt.plot(xtrain,lr.predict(xtrain),color='blue')
+plt.xlabel("Experinces")
+plt.ylabel("Salary")
+plt.show()
+
+
+#  visualising the test results
+
+plt.scatter(xtest,ytest,color='red')
+plt.plot(xtest,lr.predict(xtest),color='blue')
+
+plt.xlabel("experinces")
+plt.ylabel("salary")
+plt.show()
+'''
+lr.predict([[4.2]])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
