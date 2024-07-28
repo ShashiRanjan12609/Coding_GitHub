@@ -239,9 +239,59 @@ plt.show()
 lr.predict([[4.2]])
 
 
+....................................................................................................
+.....................................................................................................
+
+
+Project On Septal Length , Septal Weigth , Petal Length , Petal Weigth 
 
 
 
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+
+#  2. Load the dataset
+data=sns.load_dataset('iris')
+print(data.head())
+
+print(data.describe())
+print(data.info())
+data=data.dropna()
+print(data)
+
+
+ # visualizing the data
+sns.pairplot(data,hue='species')
+plt.show()
+
+# Preprocess the data
+
+data['species']=data['species'].astype('category').cat.codes
+
+x=data.drop('species',axis=1)
+y=data['species']
+scaler= StandardScaler()
+x_scaled = scaler.fit_transform(x)
+
+
+#Split the dataset
+x_train,x_test,y_train,y_test=train_test_split(x_scaled,y,test_size=0.2,random_state=42)
+
+
+# Train the model
+model=LogisticRegression()
+model.fit(x_train,y_train)
+y_pred=model.predict(x_test)
+
+# Evaluate the model
+
+accuracy=accuracy_score(x_test,y_pred)
 
 
 
