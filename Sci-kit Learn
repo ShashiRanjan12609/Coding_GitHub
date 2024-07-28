@@ -1,0 +1,157 @@
+
+# here we import the libraries
+import pandas as pd
+from sklearn.model_selection import train_test_split
+
+
+#  to print 5 rows columns
+print(dataframe.head())
+
+# prepare the data
+x=dataframe.drop(columns="Age")
+y=dataframe["Age"]
+
+# split the data
+
+x_train,x_test,y_train,y_test= train_test_split(x,y,test_size=0.4,random_state=43)
+
+
+# preprocess the data
+
+from sklearn.preprocessing import StandardScaler
+
+
+# initlize the scalar
+scaler= StandardScaler()
+
+# fir the data on the trainning data and transform the data
+
+x_train_scaled = scaler.fit_transform(x_train)
+x_test_scaled = scaler.transform(x_test)
+
+# Train the model
+
+from sklearn.neighbors import KNeighborsClassifier
+
+# initlize the classifier with 3 neighbour
+
+classifier = KNeighborsClassifier(n_neighbors=3)
+
+# fir the classifier
+classifier.fit(x_train_scaled,y_train)
+
+# Make predictions
+
+predictions=classifier.predict((x_test_scaled))
+
+from sklearn.metrics import accuracy_score
+
+# Calculate the accuracy of the predictions
+accuracy = accuracy_score(y_test, predictions)
+print(f'Accuracy: {accuracy}')
+
+
+to build a machine learning model. I'll walk you through the steps of loading the 
+dataset, preprocessing the data, training a model, and visualizing the results.
+
+Steps 
+
+1. Load the dataset 
+2.Explore the dataset 
+3. Preprocess the dataset 
+4. Split the dataset 
+5. Scale the dataset 
+6. Train the model 
+7. Make prediction 
+8. Evaluate the model 
+
+
+1. Load the Dataset
+python
+Copy code
+import pandas as pd
+
+# Load the dataset
+data = pd.read_csv('/mnt/data/athlete_events.csv')
+
+# Select specific columns
+data = data[['Age', 'Height', 'Weight', 'Sport', 'Medal']]
+
+# Display the first few rows of the dataset
+print(data.head())
+2. Preprocess the Data
+Handle Missing Values: We'll drop rows with missing values for simplicity.
+Encode Categorical Variables: We'll encode the 'Sport' column using one-hot encoding.
+Create Target Variable: We'll create a binary target variable 'Medal_Won' indicating whether an athlete won a medal.
+python
+Copy code
+# Handle missing values
+data = data.dropna()
+
+# Encode the 'Sport' column
+data_encoded = pd.get_dummies(data, columns=['Sport'])
+
+# Create the binary target variable 'Medal_Won'
+data_encoded['Medal_Won'] = data_encoded['Medal'].notnull().astype(int)
+
+# Drop the original 'Medal' column
+data_encoded = data_encoded.drop(columns='Medal')
+
+# Display the first few rows of the preprocessed dataset
+print(data_encoded.head())
+3. Select Features and Target
+python
+Copy code
+# Select features and target
+X = data_encoded.drop(columns='Medal_Won')
+y = data_encoded['Medal_Won']
+4. Split the Data
+python
+Copy code
+from sklearn.model_selection import train_test_split
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+5. Scale the Data
+python
+Copy code
+from sklearn.preprocessing import StandardScaler
+
+# Initialize the scaler
+scaler = StandardScaler()
+
+# Fit the scaler on the training data and transform the training data
+X_train_scaled = scaler.fit_transform(X_train)
+
+# Transform the testing data
+X_test_scaled = scaler.transform(X_test)
+6. Train the Model
+We'll use a Logistic Regression model for this example.
+
+python
+Copy code
+from sklearn.linear_model import LogisticRegression
+
+# Initialize the classifier
+classifier = LogisticRegression()
+
+# Fit the classifier on the scaled training data
+classifier.fit(X_train_scaled, y_train)
+7. Make Predictions
+python
+Copy code
+# Make predictions on the scaled test data
+predictions = classifier.predict(X_test_scaled)
+8. Evaluate the Model
+python
+Copy code
+from sklearn.metrics import accuracy_score, classification_report
+
+# Calculate the accuracy of the predictions
+accuracy = accuracy_score(y_test, predictions)
+print(f'Accuracy: {accuracy}')
+
+# Display a detailed classification report
+print(classification_report(y_test, predictions))
+
+
