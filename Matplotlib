@@ -90,3 +90,72 @@ plt.ylabel("Age")
 plt.grid(False)
 plt.show()
 
+
+
+
+# New Dataset :- EDA_Position_Salaries   
+
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+
+
+df=pd.read_csv("/content/Position_Salaries.csv")
+
+df.head()
+
+df.info()
+df.describe()
+
+(df['Salary'] >= 5000).sum()
+
+
+plt.scatter(df['Level'],df['Position'])
+
+plt.scatter(df['Level'],df['Salary'])
+plt.xlabel('Level')
+plt.ylabel('Position')
+plt.show()
+
+plt.plot(df['Level'],df['Salary'],marker='o')
+plt.xlabel('Level')
+plt.ylabel('Salary')
+plt.show()
+
+
+sns.set_theme(style='darkgrid')
+sns.lineplot(x='Level',y='Salary',data=df)
+
+
+sns.set_theme(style="ticks")
+sns.pairplot(df,hue='Level')
+
+
+plt.figure(figsize=(10,6))
+df['Salary'].hist(bins=30)
+plt.xlabel("Salary")
+plt.ylabel("Frequency")
+plt.title("Salary Distribution")
+plt.show()
+
+
+plt.boxplot(df["Salary"])
+plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
