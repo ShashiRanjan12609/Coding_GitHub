@@ -115,3 +115,7 @@ print(classification_report(y_test,y_pred))
 score=cv.best_score_
 
 score
+
+# code ends here at 19-08-2024 19:53 PM
+
+
