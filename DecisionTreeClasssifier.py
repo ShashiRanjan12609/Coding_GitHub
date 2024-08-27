@@ -117,5 +117,62 @@ score=cv.best_score_
 score
 
 # code ends here at 19-08-2024 19:53 PM
+  precision    recall  f1-score   support
 
+      setosa       1.00      1.00      1.00        17
+  versicolor       0.81      1.00      0.90        13
+   virginica       1.00      0.80      0.89        15
+
+    accuracy                           0.93        45
+   macro avg       0.94      0.93      0.93        45
+weighted avg       0.95      0.93      0.93        45
+
+<function accuracy_score at 0x7f0fd2c137f0>
+              precision    recall  f1-score   support
+
+      setosa       1.00      1.00      1.00        17
+  versicolor       0.67      0.62      0.64        13
+   virginica       0.69      0.73      0.71        15
+
+    accuracy                           0.80        45
+   macro avg       0.78      0.78      0.78        45
+weighted avg       0.80      0.80      0.80        45
+
+/usr/local/lib/python3.10/dist-packages/sklearn/model_selection/_validation.py:425: FitFailedWarning: 
+150 fits failed out of a total of 450.
+The score on these train-test partitions for these parameters will be set to nan.
+If these failures are not expected, you can try to debug them by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+150 fits failed with the following error:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/model_selection/_validation.py", line 729, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/base.py", line 1145, in wrapper
+    estimator._validate_params()
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/base.py", line 638, in _validate_params
+    validate_parameter_constraints(
+  File "/usr/local/lib/python3.10/dist-packages/sklearn/utils/_param_validation.py", line 96, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'log2', 'sqrt'} or None. Got 'auto' instead.
+
+  warnings.warn(some_fits_failed_message, FitFailedWarning)
+/usr/local/lib/python3.10/dist-packages/sklearn/model_selection/_search.py:979: UserWarning: One or more of the test scores are non-finite: [       nan        nan 0.64761905 0.59047619 0.66666667 0.65714286
+        nan        nan 0.97142857 0.75238095 0.83809524 0.65714286
+        nan        nan 0.93333333 0.86666667 0.96190476 0.83809524
+        nan        nan 0.93333333 0.9047619  0.95238095 0.84761905
+        nan        nan 0.92380952 0.9047619  0.97142857 0.93333333
+        nan        nan 0.66666667 0.64761905 0.66666667 0.61904762
+        nan        nan 0.85714286 0.7047619  0.8952381  0.65714286
+        nan        nan 0.92380952 0.75238095 0.94285714 0.81904762
+        nan        nan 0.93333333 0.88571429 0.94285714 0.87619048
+        nan        nan 0.92380952 0.8952381  0.96190476 0.8952381
+        nan        nan 0.64761905 0.54285714 0.66666667 0.59047619
+        nan        nan 0.98095238 0.81904762 0.9047619  0.6952381
+        nan        nan 0.96190476 0.84761905 0.91428571 0.82857143
+        nan        nan 0.95238095 0.8952381  0.95238095 0.84761905
+        nan        nan 0.92380952 0.9047619  0.93333333 0.86666667]
+  warnings.warn(
+0.980952380952381
 
