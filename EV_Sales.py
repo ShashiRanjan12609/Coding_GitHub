@@ -81,3 +81,44 @@ print(f'R-squared: {r2:.2f}')
 # Calculate the accuracy
 accuracy = model.score(X_test, y_test)
 print(f'Accuracy: {accuracy * 100:.2f}%')
+
+# Output 
+ region    category       parameter   mode powertrain  year      unit  \
+0  Austria  Historical        EV stock   Cars        BEV  2010  Vehicles   
+1  Austria  Historical  EV stock share   Cars         EV  2010   percent   
+2  Belgium  Historical        EV stock  Buses        BEV  2010  Vehicles   
+3  Belgium  Historical        EV sales   Vans        BEV  2010  Vehicles   
+4  Belgium  Historical        EV stock   Vans        BEV  2010  Vehicles   
+
+             value          percentage  
+0              350           35000,00%  
+1  789.999.961.853  78999996185300,00%  
+2                3             300,00%  
+3                7             700,00%  
+4               62            6200,00%  
+Columns with percentage values: ['percentage']
+    region    category       parameter   mode powertrain  year      unit  \
+0  Austria  Historical        EV stock   Cars        BEV  2010  Vehicles   
+1  Austria  Historical  EV stock share   Cars         EV  2010   percent   
+2  Belgium  Historical        EV stock  Buses        BEV  2010  Vehicles   
+3  Belgium  Historical        EV sales   Vans        BEV  2010  Vehicles   
+4  Belgium  Historical        EV stock   Vans        BEV  2010  Vehicles   
+
+             value    percentage  
+0              350  3.500000e+06  
+1  789.999.961.853  7.900000e+15  
+2                3  3.000000e+04  
+3                7  7.000000e+04  
+4               62  6.200000e+05  
+X contains NaN values: False
+y contains NaN values: False
+Mean Squared Error: 225620.05
+R-squared: 1.00
+Accuracy: 100.00%
+<ipython-input-21-f11221215381>:32: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df.dropna(inplace=True)
+
+
